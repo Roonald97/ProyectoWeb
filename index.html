@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title> Proyecto Web Ronald Ajocum - 5390-23-15332 </title>
+
+    <!--Librerias e imagenes-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+
+<body>
+
+    <!--contenido-->
+    <div id="wrapper">
+
+        <!--banner-->
+        <div id="banner_superior">
+
+            <header>
+                <div id="encabezado_interno">
+                    <a href="#" id="logo">
+                        <img src="img/pics/laptop.png" alt="">
+                    </a>
+
+                    <nav>
+                        <a href="#" id="menu">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                        <ul>
+                            <!--En el href="" se puede colocar el link para redireccionar a una otra pagina-->
+                            <li><a href="index.html"> Inicio </a></li>
+                            <li><a href="login.html"> Iniciar sesión </a></li>
+                            <li><a href="registrarse.html"> Registrarse </a></li>
+                            <li><a href="restablecer.html"> Restablecer contraseña </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+            <!--slider-->
+            <div id="slide-wrap">
+                <section class="slider">
+                    <ul class="slider1">
+                        <li><img src="img/slider/slider1.jpg" alt=""></li>
+                        <li><img src="img/slider/slider2.jpg" alt=""></li>
+                        <li><img src="img/slider/slider3.jpg" alt=""></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+
+        <!--iconos e informacion-->
+        <section class="destrezas" id="Destrezas" >
+            <div class="icon-wrap">
+                <i class="fa fa-desktop"></i>
+            </div>
+            <h3 style="font-weight: bold">Cursos</h3>
+            <p>
+                Conviértete en un experto en: HTML, CSS, Javascript, 
+                Phyton, C++ y otros lenguajes de programación y diseño. Con los
+                que te impondrás en el mundo de la programación y el diseño web.
+            </p>
+            <img src="img/pics/desarrollador.jpg" alt="">
+        </section>
+
+        <section class="destrezas">
+            <div class="icon-wrap">
+                <i class="fa fa-pencil-square-o"></i>
+            </div>
+            <h3 style="font-weight: bold;">Certificaciones</h3>
+            <p>
+                Puedes obtener más de 50 certificaciones con los cursos 
+                que aquí te presentamos. Además también puedes ser beneficiado
+                con becas internacionales si eres apasionado y creativo en la 
+                creación de páginas web.
+                <img src="img/pics/certificacion.jpg" alt="">                
+            </p>
+        </section>
+
+        <section class="destrezas">
+            <div class="icon-wrap">
+                <i class="fa fa-file-code-o"></i>
+            </div>
+            <h3 style="font-weight: bold">Eventos</h3>
+            <p>
+
+                Participa en los eventos presenciales realizados 
+                en los lugares y horarios que compartimos en nuestras redes sociales
+                y páginas oficiales. Si deseas más información puedes ingresar <a>aquí</a>.
+            </p>
+            <img src="img/pics/eventos.jpg" alt="">
+        </section>
+
+        <div class="clearfix-padding"></div>
+
+
+        <!--columna izquierda-->
+        <section class="left-col" id="portfolio">
+            <h3 style="font-weight: bold">Quiero ser profesor</h3>
+            <p>
+                ¿Tienes conocimientos avanzados en el desarrollo web? Si tu respuesta 
+                es sí, te invitamos a realizar algunas pruebas avanzadas con las cuales puedes formar 
+                parte de esta gran comunidad como un profesor Master Class.
+            </p>
+            <p>
+                Ingresa al siguiente link y descubre si tienes lo necesario para guiar en el 
+                camino de la programación y desarrollo a cientos de estudiantes que se inscriben 
+                anualmente a nuestros cursos. Desde ahora te decimos ¡Bienvenido!.
+            </p>
+        </section>
+
+        <section class="sidebar" id="sidebar">
+            <img src="img/pics/master.jpg" alt="">
+        </section>
+
+    </div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="banner-wrapper">
+            <div class="icon-text">
+                <div class="icon-text-icon">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="registrarse.html">Registrarse</a></li>
+                        <li><a href="restablecer.html">Restablecer contraseña</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+
+                <div class="icon-text-text">
+                    <ul class="social">
+                        <li><a href="email: rajocuma@miumg.edu.gt"><i class="fa fa-envelope-o"></i></a></li>
+                        <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://instagram.app"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://youtube.com"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--scripts slider-->
+    <script>
+        $(document).ready(function(){
+            $('.slider1').bxSlider({mode: 'fade',});
+            $('.slider2').bxSlider({mode: 'fade',});
+            $('.slider3').bxSlider({mode: 'fade',});
+        });
+    </script>
+
+</body>
+
+</html>
